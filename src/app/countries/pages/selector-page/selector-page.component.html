@@ -1,0 +1,23 @@
+<p>selector-page works!</p>
+
+<h1 class="mt-3" >Selectores anidados</h1>
+<hr>
+
+<form action="" [formGroup]="myForm">
+
+  <!-- Region -->
+  <div class="row mb-3">
+    <div class="col">
+      <div class="form-label">Continente</div>
+      <select formControlName="region" class="form-control">
+        <option value="">-- Seleccione Continente --</option>
+        <option value="africa">Africa</option>
+      </select>
+    </div>
+  </div>
+</form>
+
+<h3>Formulario</h3>
+<code>
+  {{ myForm.value | json }}
+</code>
